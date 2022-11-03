@@ -201,6 +201,7 @@ class NoteWorthyProjectItem extends StatelessWidget {
               hasSlideBoxAnimation: true,
               controller: controller,
               text: projectName,
+              lineThickness: 0.0,
               onTap: onProjectNameTap,
               textStyle: projectNameStyle ?? defaultProjectNameStyle,
               isUnderlinedOnHover: false,

@@ -64,14 +64,14 @@ class _AnimatedFooterState extends State<AnimatedFooter>
       ),
     );
     TextStyle? subtitleStyle = style?.copyWith(
-      color: AppColors.grey550,
+      color: AppColors.white,
       fontSize: Sizes.TEXT_SIZE_18,
       fontWeight: FontWeight.w400,
     );
 
     return Container(
       width: widget.width ?? widthOfScreen(context),
-      height: widget.height ?? assignHeight(context, 0.8),
+      height: widget.height ?? assignHeight(context, 0.3),
       color: widget.backgroundColor,
       child: VisibilityDetector(
         key: Key('animated-footer'),
@@ -89,30 +89,29 @@ class _AnimatedFooterState extends State<AnimatedFooter>
               height: circleImageSize,
               child: Stack(
                 children: [
-                  Positioned(
-                    right: responsiveSize(
-                      context,
-                      assignWidth(context, 0.2),
-                      assignWidth(context, 0.3),
-                      md: assignWidth(context, 0.2),
-                    ),
-                    child: AnimatedPositionedWidget(
-                      controller: CurvedAnimation(
-                        parent: controller,
-                        curve: Curves.fastOutSlowIn,
-                      ),
-                      width: circleImageSize,
-                      height: circleImageSize,
-                      child: Image.asset(
-                        ImagePath.CIRCLE,
-                        color: AppColors.white,
-                      ),
-                    ),
-                  ),
+                  // Positioned(
+                  //   right: responsiveSize(
+                  //     context,
+                  //     assignWidth(context, 0.2),
+                  //     assignWidth(context, 0.3),
+                  //     md: assignWidth(context, 0.2),
+                  //   ),
+                  //   child: AnimatedPositionedWidget(
+                  //     controller: CurvedAnimation(
+                  //       parent: controller,
+                  //       curve: Curves.fastOutSlowIn,
+                  //     ),
+                  //     width: circleImageSize,
+                  //     height: circleImageSize,
+                  //     child: Image.asset(
+                  //       ImagePath.CIRCLE,
+                  //       color: AppColors.white,
+                  //     ),
+                  //   ),
+                  // ),
                   Center(
                     child: AnimatedPositionedText(
                       text: StringConst.WORK_TOGETHER,
-                     
                       textAlign: TextAlign.center,
                       textStyle: titleStyle,
                       controller: CurvedAnimation(
@@ -124,25 +123,24 @@ class _AnimatedFooterState extends State<AnimatedFooter>
                 ],
               ),
             ),
-            Spacer(),
-            AnimatedPositionedText(
-              text: StringConst.AVAILABLE_FOR_FREELANCE,
-              textAlign: TextAlign.center,
-              textStyle: subtitleStyle,
-              factor: 2.0,
-              controller: CurvedAnimation(
-                parent: controller,
-                curve: Curves.fastOutSlowIn,
-              ),
-            ),
-            SpaceH40(),
-            AnimatedBubbleButton(
-              title: StringConst.SAY_HELLO.toUpperCase(),
-              onTap: () {
-                Navigator.pushNamed(context, ContactPage.contactPageRoute);
-              },
-            ),
-            Spacer(flex: 3),
+            // AnimatedPositionedText(
+            //   text: StringConst.AVAILABLE_FOR_FREELANCE,
+            //   textAlign: TextAlign.center,
+            //   textStyle: subtitleStyle,
+            //   factor: 2.0,
+            //   controller: CurvedAnimation(
+            //     parent: controller,
+            //     curve: Curves.fastOutSlowIn,
+            //   ),
+            // ),
+            // SpaceH40(),
+            // AnimatedBubbleButton(
+            //   title: StringConst.SAY_HELLO.toUpperCase(),
+            //   onTap: () {
+            //     Navigator.pushNamed(context, ContactPage.contactPageRoute);
+            //   },
+            // ),
+            // Spacer(flex: 3),
             ResponsiveBuilder(
               builder: (context, sizingInformation) {
                 double screenWidth = sizingInformation.screenSize.width;

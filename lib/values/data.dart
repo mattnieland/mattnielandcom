@@ -92,16 +92,17 @@ class Data {
   static List<NavItemData> menuItems = [
     NavItemData(name: StringConst.HOME, route: StringConst.HOME_PAGE),
     NavItemData(name: StringConst.ABOUT, route: StringConst.ABOUT_PAGE),
-    NavItemData(name: StringConst.WORKS, route: StringConst.WORKS_PAGE),
-    NavItemData(
-      name: StringConst.EXPERIENCE,
-      route: StringConst.EXPERIENCE_PAGE,
-    ),
-    NavItemData(
-      name: StringConst.CERTIFICATIONS,
-      route: StringConst.CERTIFICATION_PAGE,
-    ),
-    NavItemData(name: StringConst.CONTACT, route: StringConst.CONTACT_PAGE),
+    //TODO: Add more pages here
+    // NavItemData(name: StringConst.WORKS, route: StringConst.WORKS_PAGE),
+    // NavItemData(
+    //   name: StringConst.EXPERIENCE,
+    //   route: StringConst.EXPERIENCE_PAGE,
+    // ),
+    // NavItemData(
+    //   name: StringConst.CERTIFICATIONS,
+    //   route: StringConst.CERTIFICATION_PAGE,
+    // ),
+    // NavItemData(name: StringConst.CONTACT, route: StringConst.CONTACT_PAGE),
   ];
 
   static List<SocialData> socialData = [
@@ -115,58 +116,35 @@ class Data {
       iconData: FontAwesomeIcons.linkedin,
       url: StringConst.LINKED_IN_URL,
     ),
-    SocialData(
-      name: StringConst.TWITTER,
-      iconData: FontAwesomeIcons.twitter,
-      url: StringConst.TWITTER_URL,
-    ),
-    SocialData(
-      name: StringConst.INSTAGRAM,
-      iconData: FontAwesomeIcons.instagram,
-      url: StringConst.INSTAGRAM_URL,
-    ),
-    SocialData(
-      name: StringConst.TELEGRAM,
-      iconData: FontAwesomeIcons.telegram,
-      url: StringConst.TELEGRAM_URL,
-    ),
   ];
 
-  static List<String> mobileTechnologies = [
-    "Android",
-    "Kotlin",
-    "Jetpack Compose",
-    "Flutter",
-    "Dart"
-        "Java Android",
-  ];
+  static List<String> mobileTechnologies = ["Flutter", "Dart"];
 
   static List<String> otherTechnologies = [
+    "C#",
+    "ASP.NET",
+    "ASP.NET Core",
+    ".NET 6",
+    "Entity Framework",
+    "React JS",
+    "Node JS",
     "HTML 5",
     "CSS 3",
-    "JavaScript",
     "Typescript",
-    "React JS",
-    "Next JS",
-    "Node JS",
+    "JavaScript",
     "Git",
-    "AWS",
-    "Docker",
-    "Kubernetes",
-    "Google Cloud",
     "Azure",
+    "Google Cloud",
+    "AWS",
+    "Github Actions",
     "Travis CI",
     "Circle CI",
     "Express",
-    "Chakra UI",
-    "Laravel",
-    "PHP",
-    "SQL",
-    "C++",
+    "SQL Server",
+    "Oracle",
+    "MySQL",
     "Firebase",
     "Figma",
-    "Adobe XD",
-    "Wordpress",
   ];
   static List<SocialData> socialData1 = [
     SocialData(
@@ -179,11 +157,6 @@ class Data {
       iconData: FontAwesomeIcons.linkedin,
       url: StringConst.LINKED_IN_URL,
     ),
-    SocialData(
-      name: StringConst.TWITTER,
-      iconData: FontAwesomeIcons.twitter,
-      url: StringConst.TWITTER_URL,
-    ),
   ];
 
   static List<SocialData> socialData2 = [
@@ -191,21 +164,6 @@ class Data {
       name: StringConst.LINKED_IN,
       iconData: FontAwesomeIcons.linkedin,
       url: StringConst.LINKED_IN_URL,
-    ),
-    SocialData(
-      name: StringConst.TWITTER,
-      iconData: FontAwesomeIcons.twitter,
-      url: StringConst.TWITTER_URL,
-    ),
-    SocialData(
-      name: StringConst.INSTAGRAM,
-      iconData: FontAwesomeIcons.instagram,
-      url: StringConst.INSTAGRAM_URL,
-    ),
-    SocialData(
-      name: StringConst.TELEGRAM,
-      iconData: FontAwesomeIcons.telegram,
-      url: StringConst.TELEGRAM_URL,
     ),
   ];
 

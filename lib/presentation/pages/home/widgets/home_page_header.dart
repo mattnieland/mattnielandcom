@@ -145,28 +145,28 @@ class _HomePageHeaderState extends State<HomePageHeader>
             if (screenWidth < RefinedBreakpoints().tabletNormal) {
               return Column(
                 children: [
-                  Container(
-                    padding: padding,
-                    child: AnimatedSlideTranstion(
-                      controller: controller,
-                      position: animation,
-                      child: Stack(
-                        children: [
-                          RotationTransition(
-                            turns: rotationController,
-                            child: Image.asset(
-                              ImagePath.DEV_SKILLS_2,
-                              width: screenWidth,
-                            ),
-                          ),
-                          Image.asset(
-                            ImagePath.DEV_MEDITATE,
-                            width: screenWidth,
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
+                  // Container(
+                  //   padding: padding,
+                  //   child: AnimatedSlideTranstion(
+                  //     controller: controller,
+                  //     position: animation,
+                  //     child: Stack(
+                  //       children: [
+                  //         RotationTransition(
+                  //           turns: rotationController,
+                  //           child: Image.asset(
+                  //             ImagePath.DEV_SKILLS_2,
+                  //             width: screenWidth,
+                  //           ),
+                  //         ),
+                  //         Image.asset(
+                  //           ImagePath.DEV_MEDITATE,
+                  //           width: screenWidth,
+                  //         ),
+                  //       ],
+                  //     ),
+                  //   ),
+                  // ),
                   Container(
                     padding: padding.copyWith(top: 0),
                     child: Container(
@@ -194,28 +194,28 @@ class _HomePageHeaderState extends State<HomePageHeader>
                     ),
                   ),
                   SizedBox(width: screenWidth * 0.05),
-                  Container(
-                    margin: imageMargin,
-                    child: AnimatedSlideTranstion(
-                      controller: controller,
-                      position: animation,
-                      child: Stack(
-                        children: [
-                          RotationTransition(
-                            turns: rotationController,
-                            child: Image.asset(
-                              ImagePath.DEV_SKILLS_2,
-                              width: screenWidth * 0.35,
-                            ),
-                          ),
-                          Image.asset(
-                            ImagePath.DEV_MEDITATE,
-                            width: screenWidth * 0.35,
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
+                  // Container(
+                  //   margin: imageMargin,
+                  //   child: AnimatedSlideTranstion(
+                  //     controller: controller,
+                  //     position: animation,
+                  //     child: Stack(
+                  //       children: [
+                  //         RotationTransition(
+                  //           turns: rotationController,
+                  //           child: Image.asset(
+                  //             ImagePath.DEV_SKILLS_2,
+                  //             width: screenWidth * 0.35,
+                  //           ),
+                  //         ),
+                  //         Image.asset(
+                  //           ImagePath.DEV_MEDITATE,
+                  //           width: screenWidth * 0.35,
+                  //         ),
+                  //       ],
+                  //     ),
+                  //   ),
+                  // ),
                 ],
               );
             }
@@ -268,18 +268,23 @@ class WhiteCircle extends StatelessWidget {
   Widget build(BuildContext context) {
     final widthOfCircle = responsiveSize(
       context,
+      widthOfScreen(context) / 1.5,
       widthOfScreen(context) / 2.5,
-      widthOfScreen(context) / 3.5,
     );
     return Container(
       width: widthOfCircle,
       height: widthOfCircle,
-      decoration: BoxDecoration(
-        color: AppColors.white,
-        borderRadius: BorderRadius.all(
-          Radius.circular(widthOfCircle / 2),
-        ),
+      child: Image.asset(
+        ImagePath.DEV_MEDITATE,
+        width: widthOfCircle,
+        height: widthOfCircle,
       ),
+      // decoration: BoxDecoration(
+      //   color: AppColors.white,
+      //   borderRadius: BorderRadius.all(
+      //     Radius.circular(widthOfCircle / 2),
+      //   ),
+      // ),
     );
   }
 }
@@ -338,33 +343,33 @@ class _AboutDevState extends State<AboutDev> {
             ),
           ),
         ),
-        SpaceH12(),
-        Container(
-          margin: margin,
-          child: AnimatedTextSlideBoxTransition(
-            controller: widget.controller,
-            text: StringConst.DEV_TITLE,
-            width: responsiveSize(
-              context,
-              widget.width * 0.75,
-              widget.width,
-              md: widget.width,
-              sm: widget.width,
-            ),
-            maxLines: 3,
-            textStyle: textTheme.headline2?.copyWith(
-              color: AppColors.black,
-              fontSize: headerFontSize,
-            ),
-          ),
-        ),
-        SpaceH30(),
+        // SpaceH12(),
+        // Container(
+        //   margin: margin,
+        //   child: AnimatedTextSlideBoxTransition(
+        //     controller: widget.controller,
+        //     text: StringConst.DEV_TITLE,
+        //     width: responsiveSize(
+        //       context,
+        //       widget.width * 0.75,
+        //       widget.width,
+        //       md: widget.width,
+        //       sm: widget.width,
+        //     ),
+        //     maxLines: 3,
+        //     textStyle: textTheme.headline2?.copyWith(
+        //       color: AppColors.black,
+        //       fontSize: headerFontSize,
+        //     ),
+        //   ),
+        // ),
+        // SpaceH30(),
         Container(
           margin: margin,
           child: AnimatedPositionedText(
             controller: curvedAnimation,
             width: widget.width,
-            maxLines: 3,
+            maxLines: 2,
             factor: 2,
             text: StringConst.DEV_DESC,
             textStyle: textTheme.bodyText1?.copyWith(
@@ -378,7 +383,6 @@ class _AboutDevState extends State<AboutDev> {
             ),
           ),
         ),
-        SpaceH30(),
         AnimatedPositionedWidget(
           controller: curvedAnimation,
           width: 200,
@@ -388,6 +392,7 @@ class _AboutDevState extends State<AboutDev> {
             imageColor: AppColors.black,
             startOffset: Offset(0, 0),
             targetOffset: Offset(0.1, 0),
+            startWidth: 200,
             targetWidth: 200,
             startBorderRadius: const BorderRadius.all(
               Radius.circular(100.0),
@@ -408,7 +413,7 @@ class _AboutDevState extends State<AboutDev> {
             },
           ),
         ),
-        SpaceH40(),
+        SpaceH12(),
         Container(
           margin: margin,
           child: Wrap(
@@ -441,7 +446,8 @@ class _AboutDevState extends State<AboutDev> {
       items.add(
         AnimatedLineThroughText(
           text: data[index].name,
-          isUnderlinedByDefault: true,
+          isUnderlinedByDefault: false,
+          lineThickness: 0.0,
           controller: widget.controller,
           hasSlideBoxAnimation: true,
           hasOffsetAnimation: true,

@@ -6,6 +6,6 @@ class DocumentPath {
   // static const String docDir = "assets/documents";
 
   //Docs
-  static const String CV = "$docDir/david-cobbina-cv.pdf";
-  static const String CV_2 = "$docDir/DAVID_COBBINA_CV.pdf";
+  static const String CV = "https://www.linkr.lol/3u";
+  static const String CV_2 = "https://www.linkr.lol/3u";
 }

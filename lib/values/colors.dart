@@ -4,15 +4,14 @@ class AppColors {
   static const double primaryColorOpacity = 0.1;
 
   static const Color primaryColor = Color(0xFFF9F9F9);
-  static const Color secondaryColor = Color(0xFF363636);
+  static const Color secondaryColor = Color(0xFF00274C);
   static const Color accentColor = Color(0xFFFFFFFF);
   static const Color accentColor2 = Color(0xFFEEEEEE);
 
   static const Color white = Color(0xFFFFFFFF);
-  static const Color black = Color(0xFF000000);
+  static const Color black = Color(0xFF00274C);
   static const Color black100 = Color(0xFF303030);
   static const Color textSelectionColor = Color(0xFF1C00FF);
-
 
   static const Color grey = Color(0xFFE1E1E1);
   static const Color grey100 = Color(0xFFE8E8E8);
@@ -39,9 +38,9 @@ class AppColors {
   static const Color nimbusSelectedNavTitle = Color(0xFFF6C350);
 
   static const Color foodybite = Color(0xFF6B79F6);
-  static const Color foodybiteNavTitle =  Color(0xFFB2B9CF);
-  static const Color foodybiteSelectedNavTitle =  Color(0xFF212455);
-  static const Color foodybiteAppLogo =  Color(0xFF808BF6);
+  static const Color foodybiteNavTitle = Color(0xFFB2B9CF);
+  static const Color foodybiteSelectedNavTitle = Color(0xFF212455);
+  static const Color foodybiteAppLogo = Color(0xFF808BF6);
 
   static const Color flutter_catalog = Color(0xFF5A458D);
   static const Color flutterCatalogSelectedNavTitle = Color(0xFF7D54A9);
@@ -78,4 +77,6 @@ class AppColors {
   static const Color outfitrNavTitle = Color(0xFF0A0E32);
   static const Color outfitrSelectedNavTitle = Color(0xFF377F8C);
   static const Color outfitrAppLogo = Color(0xFF2DB8AF);
+
+  static const Color splashBackgroundColor = Color(0xFF00274C);
 }

@@ -6,7 +6,6 @@ import 'package:aerium/values/values.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
-
 class NextProject extends StatefulWidget {
   const NextProject({
     Key? key,
@@ -129,6 +128,8 @@ class _NextProjectState extends State<NextProject>
                   titleStyle: buttonStyle,
                   startOffset: Offset(0, 0),
                   targetOffset: Offset(0.1, 0),
+                  startWidth: 150,
+                  targetWidth: 150,
                   onTap: () {
                     if (widget.navigateToNextProject != null) {
                       widget.navigateToNextProject!();
@@ -219,6 +220,8 @@ class _NextProjectState extends State<NextProject>
                         titleStyle: buttonStyle,
                         startOffset: Offset(0, 0),
                         targetOffset: Offset(0.1, 0),
+                        startWidth: 150,
+                        targetWidth: 150,
                         onTap: () {
                           if (widget.navigateToNextProject != null) {
                             widget.navigateToNextProject!();
@@ -253,5 +256,4 @@ class _NextProjectState extends State<NextProject>
       },
     );
   }
-
 }

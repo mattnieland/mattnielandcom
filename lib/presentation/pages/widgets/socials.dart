@@ -21,7 +21,7 @@ class Socials extends StatelessWidget {
   Socials({
     Key? key,
     required this.socialData,
-    this.size = Sizes.ICON_SIZE_18,
+    this.size = Sizes.ICON_SIZE_40,
     this.color = AppColors.white,
     this.spacing = Sizes.SIZE_40,
     this.runSpacing = Sizes.SIZE_16,
@@ -39,13 +39,15 @@ class Socials extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: isHorizontal ? Wrap(
-        spacing: spacing,
-        runSpacing: runSpacing,
-        children: _buildSocialIcons(socialData),
-      ) : Column(
-        children: _buildSocialIcons(socialData),
-      ),
+      child: isHorizontal
+          ? Wrap(
+              spacing: spacing,
+              runSpacing: runSpacing,
+              children: _buildSocialIcons(socialData),
+            )
+          : Column(
+              children: _buildSocialIcons(socialData),
+            ),
     );
   }
 
@@ -65,7 +67,7 @@ class Socials extends StatelessWidget {
       );
 
       // if it is vertical, add spaces
-      if(!isHorizontal) {
+      if (!isHorizontal) {
         items.add(SpaceH30());
       }
     }

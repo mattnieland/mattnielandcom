@@ -169,34 +169,36 @@ class _AboutPageState extends State<AboutPage> with TickerProviderStateMixin {
                     },
                     child: ContentBuilder(
                       controller: _storyController,
-                      number: "/01 ",
+                      number: "01 ",
+                      numberStyle: bodyText2Style,
                       width: contentAreaWidth,
                       section: StringConst.ABOUT_DEV_STORY.toUpperCase(),
+                      sectionStyle: bodyText2Style,
                       title: StringConst.ABOUT_DEV_STORY_TITLE,
                       body: Column(
                         children: [
                           AnimatedPositionedText(
                             controller: _storySectionAnimation,
                             width: widthOfBody,
-                            maxLines: 30,
+                            maxLines: 10,
                             // factor: 1.25,
                             text: StringConst.ABOUT_DEV_STORY_CONTENT_1,
                             textStyle: bodyText1Style,
                           ),
-                          AnimatedPositionedText(
-                            controller: _storySectionAnimation,
-                            width: widthOfBody,
-                            maxLines: 30,
-                            text: StringConst.ABOUT_DEV_STORY_CONTENT_2,
-                            textStyle: bodyText1Style,
-                          ),
-                           AnimatedPositionedText(
-                            controller: _storySectionAnimation,
-                            width: widthOfBody,
-                            maxLines: 30,
-                            text: StringConst.ABOUT_DEV_STORY_CONTENT_3,
-                            textStyle: bodyText1Style,
-                          ),
+                          // AnimatedPositionedText(
+                          //   controller: _storySectionAnimation,
+                          //   width: widthOfBody,
+                          //   maxLines: 30,
+                          //   text: StringConst.ABOUT_DEV_STORY_CONTENT_2,
+                          //   textStyle: bodyText1Style,
+                          // ),
+                          // AnimatedPositionedText(
+                          //   controller: _storySectionAnimation,
+                          //   width: widthOfBody,
+                          //   maxLines: 30,
+                          //   text: StringConst.ABOUT_DEV_STORY_CONTENT_3,
+                          //   textStyle: bodyText1Style,
+                          // ),
                         ],
                       ),
                     ),
@@ -213,9 +215,11 @@ class _AboutPageState extends State<AboutPage> with TickerProviderStateMixin {
                     },
                     child: ContentBuilder(
                       controller: _technologyController,
-                      number: "/02 ",
+                      number: "02 ",
+                      numberStyle: bodyText2Style,
                       width: contentAreaWidth,
                       section: StringConst.ABOUT_DEV_TECHNOLOGY.toUpperCase(),
+                      sectionStyle: bodyText2Style,
                       title: StringConst.ABOUT_DEV_TECHNOLOGY_TITLE,
                       body: Column(
                         children: [
@@ -261,9 +265,11 @@ class _AboutPageState extends State<AboutPage> with TickerProviderStateMixin {
                     },
                     child: ContentBuilder(
                       controller: _contactController,
-                      number: "/03 ",
+                      number: "03 ",
+                      numberStyle: bodyText2Style,
                       width: contentAreaWidth,
                       section: StringConst.ABOUT_DEV_CONTACT.toUpperCase(),
+                      sectionStyle: bodyText2Style,
                       title: StringConst.ABOUT_DEV_CONTACT_SOCIAL,
                       body: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -289,6 +295,7 @@ class _AboutPageState extends State<AboutPage> with TickerProviderStateMixin {
                           AnimatedLineThroughText(
                             text: StringConst.DEV_EMAIL,
                             hasSlideBoxAnimation: true,
+                            lineThickness: 0.0,
                             controller: _contactController,
                             onTap: () {
                               Functions.launchUrl(StringConst.EMAIL_URL);
@@ -299,55 +306,55 @@ class _AboutPageState extends State<AboutPage> with TickerProviderStateMixin {
                       ),
                     ),
                   ),
-                  CustomSpacer(heightFactor: 0.1),
-                  VisibilityDetector(
-                    key: Key('quote-section'),
-                    onVisibilityChanged: (visibilityInfo) {
-                      double visiblePercentage =
-                          visibilityInfo.visibleFraction * 100;
-                      if (visiblePercentage > 50) {
-                        _quoteController.forward();
-                      }
-                    },
-                    child: Column(
-                      children: [
-                        AnimatedTextSlideBoxTransition(
-                          controller: _quoteController,
-                          text: StringConst.FAMOUS_QUOTE,
-                          maxLines: 5,
-                          width: contentAreaWidth,
-                          textAlign: TextAlign.center,
-                          textStyle: titleStyle?.copyWith(
-                            fontSize: responsiveSize(
-                              context,
-                              Sizes.TEXT_SIZE_24,
-                              Sizes.TEXT_SIZE_36,
-                              md: Sizes.TEXT_SIZE_28,
-                            ),
-                            height: 2.0,
-                          ),
-                        ),
-                        SpaceH20(),
-                        Align(
-                          alignment: Alignment.centerRight,
-                          child: AnimatedTextSlideBoxTransition(
-                            controller: _quoteController,
-                            text: "— ${StringConst.FAMOUS_QUOTE_AUTHOR}",
-                            textStyle: textTheme.bodyText1?.copyWith(
-                              fontSize: responsiveSize(
-                                context,
-                                Sizes.TEXT_SIZE_16,
-                                Sizes.TEXT_SIZE_18,
-                                md: Sizes.TEXT_SIZE_16,
-                              ),
-                              fontWeight: FontWeight.w400,
-                              color: AppColors.grey600,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
+                  // CustomSpacer(heightFactor: 0.1),
+                  // VisibilityDetector(
+                  //   key: Key('quote-section'),
+                  //   onVisibilityChanged: (visibilityInfo) {
+                  //     double visiblePercentage =
+                  //         visibilityInfo.visibleFraction * 100;
+                  //     if (visiblePercentage > 50) {
+                  //       _quoteController.forward();
+                  //     }
+                  //   },
+                  //   child: Column(
+                  //     children: [
+                  //       AnimatedTextSlideBoxTransition(
+                  //         controller: _quoteController,
+                  //         text: StringConst.FAMOUS_QUOTE,
+                  //         maxLines: 5,
+                  //         width: contentAreaWidth,
+                  //         textAlign: TextAlign.center,
+                  //         textStyle: titleStyle?.copyWith(
+                  //           fontSize: responsiveSize(
+                  //             context,
+                  //             Sizes.TEXT_SIZE_24,
+                  //             Sizes.TEXT_SIZE_36,
+                  //             md: Sizes.TEXT_SIZE_28,
+                  //           ),
+                  //           height: 2.0,
+                  //         ),
+                  //       ),
+                  //       SpaceH20(),
+                  //       Align(
+                  //         alignment: Alignment.centerRight,
+                  //         child: AnimatedTextSlideBoxTransition(
+                  //           controller: _quoteController,
+                  //           text: "— ${StringConst.FAMOUS_QUOTE_AUTHOR}",
+                  //           textStyle: textTheme.bodyText1?.copyWith(
+                  //             fontSize: responsiveSize(
+                  //               context,
+                  //               Sizes.TEXT_SIZE_16,
+                  //               Sizes.TEXT_SIZE_18,
+                  //               md: Sizes.TEXT_SIZE_16,
+                  //             ),
+                  //             fontWeight: FontWeight.w400,
+                  //             color: AppColors.grey600,
+                  //           ),
+                  //         ),
+                  //       ),
+                  //     ],
+                  //   ),
+                  // ),
                   CustomSpacer(heightFactor: 0.2),
                 ],
               ),
@@ -374,10 +381,11 @@ class _AboutPageState extends State<AboutPage> with TickerProviderStateMixin {
       items.add(
         AnimatedLineThroughText(
           text: data[index].name,
-          isUnderlinedByDefault: true,
+          isUnderlinedByDefault: false,
+          lineThickness: 0.0,
           controller: _contactController,
           hasSlideBoxAnimation: true,
-          isUnderlinedOnHover: false,
+          isUnderlinedOnHover: true,
           onTap: () {
             Functions.launchUrl(data[index].url);
           },

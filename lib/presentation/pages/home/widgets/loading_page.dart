@@ -16,12 +16,12 @@ class LoadingHomePageAnimation extends StatefulWidget {
     required this.text,
     required this.style,
     required this.onLoadingDone,
-    this.lineColor,
+    // this.lineColor,
   }) : super(key: key);
   final String text;
   final TextStyle? style;
   final VoidCallback onLoadingDone;
-  final Color? lineColor;
+  // final Color? lineColor;
 
   @override
   _LoadingHomePageAnimationState createState() =>
@@ -37,11 +37,11 @@ class _LoadingHomePageAnimationState extends State<LoadingHomePageAnimation>
   late Animation<double> scaleAnimation;
   late Animation<double> opacityAnimation;
   late Animation<double> fadeAnimation;
-  late Color lineColor;
+  // late Color lineColor;
   final Duration _scaleDuration = Duration(milliseconds: 750);
   final Duration _leftRightContainerDuration = Duration(milliseconds: 750);
   final Duration _containerDuration = Duration(milliseconds: 2000);
-  bool _leftRightAnimationStarted = false;
+  // bool _leftRightAnimationStarted = false;
   bool _leftRightAnimationDone = false;
   bool _isAnimationOver = false;
   late Size size;
@@ -52,7 +52,7 @@ class _LoadingHomePageAnimationState extends State<LoadingHomePageAnimation>
   void initState() {
     super.initState();
     setTextWidthAndHeight();
-    lineColor = widget.lineColor ?? defaultLineColor;
+    // lineColor = widget.lineColor ?? defaultLineColor;
     _scaleOpacityController = AnimationController(
       vsync: this,
       duration: _scaleDuration,
@@ -100,7 +100,7 @@ class _LoadingHomePageAnimationState extends State<LoadingHomePageAnimation>
     _containerController.addStatusListener((status) {
       if (status == AnimationStatus.completed) {
         setState(() {
-          _leftRightAnimationStarted = true;
+          // _leftRightAnimationStarted = true;
           _fadeOutController.forward();
         });
       }
@@ -138,10 +138,9 @@ class _LoadingHomePageAnimationState extends State<LoadingHomePageAnimation>
     double screenWidth = widthOfScreen(context);
     double screenHeight = heightOfScreen(context);
     double halfHeightOfScreen = screenHeight / 2;
-    double widthOfLeftLine = assignWidth(context, 0.5) - (textWidth/2);
-    double widthOfRightLine = screenWidth - (widthOfLeftLine + textWidth);
-    double leftContainerStart = (screenWidth / 2) - (textWidth / 2);
-
+    // double widthOfLeftLine = assignWidth(context, 0.5) - (textWidth / 2);
+    // double widthOfRightLine = screenWidth - (widthOfLeftLine + textWidth);
+    // double leftContainerStart = (screenWidth / 2) - (textWidth / 2);
 
     return _isAnimationOver
         ? Empty()
@@ -151,7 +150,7 @@ class _LoadingHomePageAnimationState extends State<LoadingHomePageAnimation>
                 width: screenWidth,
                 height: _leftRightAnimationDone ? 0 : halfHeightOfScreen,
                 duration: _scaleDuration,
-                color: AppColors.black,
+                color: AppColors.splashBackgroundColor,
                 onEnd: () {
                   widget.onLoadingDone();
                   setState(() {
@@ -165,7 +164,7 @@ class _LoadingHomePageAnimationState extends State<LoadingHomePageAnimation>
                   width: screenWidth,
                   height: _leftRightAnimationDone ? 0 : halfHeightOfScreen,
                   duration: _scaleDuration,
-                  color: AppColors.black,
+                  color: AppColors.splashBackgroundColor,
                 ),
               ),
               Container(
@@ -204,64 +203,64 @@ class _LoadingHomePageAnimationState extends State<LoadingHomePageAnimation>
                           Spacer(),
                         ],
                       ),
-                      SpaceH20(),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: [
-                          Container(
-                            width: widthOfLeftLine,
-                            child: Stack(
-                              children: [
-                                Container(
-                                  width: widthOfLeftLine,
-                                  height: lineHeight,
-                                  color: lineColor,
-                                ),
-                                Positioned(
-                                  child: AnimatedContainer(
-                                    width: _leftRightAnimationStarted
-                                        ? 0
-                                        : leftContainerStart,
-                                    height: lineHeight,
-                                    color: AppColors.black,
-                                    duration: _leftRightContainerDuration,
-                                    // curve: Curves.ease,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                          containerAnimationBuilder(
-                            controller: _containerController,
-                            animation: containerAnimation,
-                            color: lineColor,
-                          ),
-                          Container(
-                            width: widthOfRightLine,
-                            child: Stack(
-                              children: [
-                                Container(
-                                  width: widthOfRightLine,
-                                  height: lineHeight,
-                                  color: lineColor,
-                                ),
-                                Positioned(
-                                  right: 0,
-                                  child: AnimatedContainer(
-                                    width: _leftRightAnimationStarted
-                                        ? 0
-                                        : widthOfRightLine,
-                                    height: lineHeight,
-                                    color: AppColors.black,
-                                    duration: _leftRightContainerDuration,
-                                    onEnd: () {},
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
-                      )
+                      // SpaceH20(),
+                      // Row(
+                      //   mainAxisAlignment: MainAxisAlignment.start,
+                      //   children: [
+                      //     Container(
+                      //       width: widthOfLeftLine,
+                      //       child: Stack(
+                      //         children: [
+                      //           Container(
+                      //             width: widthOfLeftLine,
+                      //             height: lineHeight,
+                      //             color: lineColor,
+                      //           ),
+                      //           Positioned(
+                      //             child: AnimatedContainer(
+                      //               width: _leftRightAnimationStarted
+                      //                   ? 0
+                      //                   : leftContainerStart,
+                      //               height: lineHeight,
+                      //               color: AppColors.white,
+                      //               duration: _leftRightContainerDuration,
+                      //               // curve: Curves.ease,
+                      //             ),
+                      //           ),
+                      //         ],
+                      //       ),
+                      //     ),
+                      //     containerAnimationBuilder(
+                      //       controller: _containerController,
+                      //       animation: containerAnimation,
+                      //       color: lineColor,
+                      //     ),
+                      //     Container(
+                      //       width: widthOfRightLine,
+                      //       child: Stack(
+                      //         children: [
+                      //           Container(
+                      //             width: widthOfRightLine,
+                      //             height: lineHeight,
+                      //             color: lineColor,
+                      //           ),
+                      //           Positioned(
+                      //             right: 0,
+                      //             child: AnimatedContainer(
+                      //               width: _leftRightAnimationStarted
+                      //                   ? 0
+                      //                   : widthOfRightLine,
+                      //               height: lineHeight,
+                      //               color: AppColors.white,
+                      //               duration: _leftRightContainerDuration,
+                      //               onEnd: () {},
+                      //             ),
+                      //           ),
+                      //         ],
+                      //       ),
+                      //     ),
+                      //   ],
+                      // )
                     ],
                   ),
                 ),

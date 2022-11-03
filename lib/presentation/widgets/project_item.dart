@@ -423,7 +423,7 @@ class _ProjectItemLgState extends State<ProjectItemLg>
               top: positionOfButton, //places button
               right: assignWidth(context, 0.1),
               child: AnimatedBubbleButton(
-                startWidth: buttonWidth,
+                startWidth: buttonTargetWidth,
                 hovering: _isHovering,
                 controller: _controller,
                 duration: widget.duration,
@@ -515,8 +515,6 @@ class _ProjectItemSmState extends State<ProjectItemSm>
       });
     }
   }
-
-  
 
   @override
   Widget build(BuildContext context) {
@@ -635,7 +633,7 @@ class _ProjectItemSmState extends State<ProjectItemSm>
               child: Align(
                 alignment: Alignment.centerRight,
                 child: AnimatedBubbleButton(
-                  startWidth: startWidthOfButtonSm,
+                  startWidth: targetWidthSm,
                   hovering: _isHovering,
                   controller: _controller,
                   duration: widget.duration,

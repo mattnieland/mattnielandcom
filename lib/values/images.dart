@@ -7,7 +7,7 @@ class ImagePath {
   static const String screenshotsDir = "assets/screenshots";
 
   //Images
-  static const String DEV = "$imageDir/david_legend.png";
+  static const String DEV = "$imageDir/matt_nieland.jpg";
 
   static const String VYBZ = "$imageDir/vybz.jpg";
   static const String DAVID = "$imageDir/david.png";
@@ -21,7 +21,7 @@ class ImagePath {
   static const String LEARN_UPP = "$imageDir/learn_upp.jpg";
   static const String WORKS = "$imageDir/works.png";
 
-  static const String CIRCLE = "$imageDir/circle.png";
+  static const String CIRCLE = "$imageDir/ohana.png";
   static const String PLAYSTORE = "$imageDir/playstore.png";
   static const String ARROW_RIGHT = "$imageDir/right-arrow.png";
   static const String ARROW_DOWN = "$imageDir/down-arrow.png";
@@ -32,8 +32,8 @@ class ImagePath {
   static const String MEDITATION = "$imageDir/meditation.png";
   static const String ABOUT_PORTRAIT = "$imageDir/about_portrait.png";
   static const String DEV_ABOUT = "$imageDir/dev-about.jpg";
-  static const String DEV_MEDITATE = "$imageDir/dev_meditate.png";
-  
+  static const String DEV_MEDITATE = "$imageDir/me.png";
+
   static const String DEV_SKILLS = "$imageDir/skills.png";
   static const String DEV_SKILLS_1 = "$imageDir/skills1.png";
   static const String DEV_SKILLS_2 = "$imageDir/skills2.png";
@@ -41,7 +41,8 @@ class ImagePath {
 
   // Certifications
   static const String ANDROID_BASICS_CERT = "$imageDir/android_basics_cert.png";
-  static const String CLOUD_DEVELOPER_CERT = "$imageDir/cloud_developer_cert.png";
+  static const String CLOUD_DEVELOPER_CERT =
+      "$imageDir/cloud_developer_cert.png";
   static const String CMU_MASTERS_CERT = "$imageDir/cmu_cert.png";
   static const String ASSOCIATE_ANDROID_DEV =
       "$imageDir/associate_android_dev.png";
@@ -104,7 +105,6 @@ class ImagePath {
   static const String ROAM_WIREFRAMES_3 =
       "$projectsDir/roam/wireframes_signup_login.jpeg";
 
-
   // Disney
   static const String DISNEY_PLUS_COVER =
       "$projectsDir/disneyplus/disneyplus_cover.png";
@@ -137,7 +137,6 @@ class ImagePath {
       "$projectsDir/disneyplus/disneyplus_components.png";
   static const String DISNEY_PLUS_13 =
       "$projectsDir/disneyplus/disneyplus_the_end.png";
-
 
   // Flutter Catalog
   static const String FLUTTER_CATALOG_COVER =
@@ -172,7 +171,7 @@ class ImagePath {
   // Aerium
   static const String AERIUM_COVER =
       "$projectsDir/aerium-v1/portfolio_cover.png";
-  
+
   static const String AERIUM_DESIGN_2 =
       "$projectsDir/aerium-v1/portfolio_design_2.png";
   static const String AERIUM_DESIGN_3 =

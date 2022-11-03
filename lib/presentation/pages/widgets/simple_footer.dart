@@ -70,9 +70,43 @@ class SimpleFooterSm extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
-              StringConst.COPYRIGHT,
-              style: style,
+            InkWell(
+              onTap: () {
+                Functions.launchUrl(StringConst.BUILT_LINK);
+              },
+              child: AnimatedLineThroughText(
+                text: StringConst.BUILT,
+                isUnderlinedByDefault: true,
+                isUnderlinedOnHover: false,
+                lineThickness: 0.0,
+                hoverColor: AppColors.white,
+                coverColor: AppColors.black,
+                textStyle: style?.copyWith(
+                  decoration: TextDecoration.underline,
+                ),
+              ),
+            ),
+          ],
+        ),
+        SpaceH12(),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            InkWell(
+              onTap: () {
+                Functions.launchUrl(StringConst.COPYRIGHT_LINK);
+              },
+              child: AnimatedLineThroughText(
+                text: StringConst.COPYRIGHT,
+                isUnderlinedByDefault: true,
+                isUnderlinedOnHover: false,
+                lineThickness: 0.0,
+                hoverColor: AppColors.white,
+                coverColor: AppColors.black,
+                textStyle: style?.copyWith(
+                  decoration: TextDecoration.underline,
+                ),
+              ),
             ),
           ],
         ),
@@ -88,6 +122,7 @@ class SimpleFooterSm extends StatelessWidget {
                 text: StringConst.DESIGNED_BY,
                 isUnderlinedByDefault: true,
                 isUnderlinedOnHover: false,
+                lineThickness: 0.0,
                 hoverColor: AppColors.white,
                 coverColor: AppColors.black,
                 textStyle: style?.copyWith(
@@ -126,9 +161,38 @@ class SimpleFooterLg extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
-              StringConst.COPYRIGHT,
-              style: style,
+            InkWell(
+              onTap: () {
+                Functions.launchUrl(StringConst.BUILT_LINK);
+              },
+              child: AnimatedLineThroughText(
+                text: StringConst.BUILT,
+                isUnderlinedByDefault: true,
+                isUnderlinedOnHover: false,
+                lineThickness: 0.0,
+                hoverColor: AppColors.white,
+                coverColor: AppColors.black,
+                textStyle: style?.copyWith(
+                  decoration: TextDecoration.underline,
+                ),
+              ),
+            ),
+            SpaceW8(),
+            InkWell(
+              onTap: () {
+                Functions.launchUrl(StringConst.COPYRIGHT_LINK);
+              },
+              child: AnimatedLineThroughText(
+                text: StringConst.COPYRIGHT,
+                isUnderlinedByDefault: true,
+                isUnderlinedOnHover: false,
+                hoverColor: AppColors.white,
+                coverColor: AppColors.black,
+                lineThickness: 0.0,
+                textStyle: style?.copyWith(
+                  decoration: TextDecoration.underline,
+                ),
+              ),
             ),
             SpaceW8(),
             InkWell(
@@ -140,6 +204,7 @@ class SimpleFooterLg extends StatelessWidget {
                 isUnderlinedByDefault: true,
                 isUnderlinedOnHover: false,
                 hoverColor: AppColors.white,
+                lineThickness: 0.0,
                 coverColor: AppColors.black,
                 textStyle: style?.copyWith(
                   decoration: TextDecoration.underline,
@@ -174,14 +239,14 @@ class BuiltWithFlutter extends StatelessWidget {
           StringConst.BUILT_WITH_FLUTTER,
           style: style,
         ),
-        FlutterLogo(size: 14),
+        FlutterLogo(size: 16),
         Text(
           " with ",
           style: style,
         ),
         Icon(
           FontAwesomeIcons.solidHeart,
-          size: 14,
+          size: 16,
           color: AppColors.errorRed,
         )
       ],

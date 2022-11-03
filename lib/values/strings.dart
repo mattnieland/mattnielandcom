@@ -2,9 +2,9 @@ part of values;
 
 class StringConst {
   //strings
-  static const String APP_NAME = "David Legend Portfolio";
-  static const String APP_TITLE = "David Legend Portfolio";
-  static const String SITE_URL = "https://davidcobbina.com";
+  static const String APP_NAME = "Matt Nieland Portfolio";
+  static const String APP_TITLE = "Matt Nieland Portfolio";
+  static const String SITE_URL = "https://mattnieland.com";
 
   static const String HOME = "Home";
   static const String ABOUT = "About";
@@ -17,13 +17,13 @@ class StringConst {
   static const String PHONE_NUMBER = "Phone Number";
   static const String RESUME = "Resume";
   static const String CERTIFICATIONS = "Certifications";
-  static const String EMAIL_VALUE = "davidcobbina47@gmail.com";
+  static const String EMAIL_VALUE = "matt.nieland@gmail.com";
 
   // Home Page
   static const String HI = "Hi,";
-  static const String DEV_INTRO = "I'm David.";
+  static const String DEV_INTRO = "I'm Matt.";
   static const String DEV_TITLE = "Software Engineer.";
-  static const String DEV_DESC = "Mobile Engineer / Full Stack Developer / Cloud Devops";
+  static const String DEV_DESC = "Full Stack Developer / Mobile Engineer";
   static const String SEE_MY_WORKS = "See my works";
   static const String SCROLL_DOWN = "Scroll Down";
   static const String CRAFTED_WITH_LOVE = "Crafted with love.";
@@ -46,38 +46,41 @@ class StringConst {
   static const String MESSAGE_ERROR_MSG =
       "* Please enter something to send this form";
   static const String SEND_MESSAGE = "Send Message";
-  static const String COPYRIGHT = "©  2021  Built by  $DEV_NAME,";
+  static const String BUILT = "Adapted by Matt Nieland, ";
+  static const String BUILT_LINK = "https://mattnieland.com";
+  static const String COPYRIGHT = "© 2021 Built by David Cobbina, ";
+  static const String COPYRIGHT_LINK = "https://davidcobbina.com";
   static const String DESIGNED_BY = "Designed by Julius G.";
   static const String DESIGN_LINK =
       "https://www.behance.net/gallery/63574251/Personal-Portfolio-Website-Design";
   static const String MESSAGE_ME = "Message me";
-  static const String EMAIL_RESPONSE = "Thanks for reaching out to me! I will get back to you ASAP";
-  static const String EMAIL_FAILED_RESPONSE = "Something went wrong. Please send me an email manually - ${StringConst.DEV_EMAIL}";
+  static const String EMAIL_RESPONSE =
+      "Thanks for reaching out to me! I will get back to you ASAP";
+  static const String EMAIL_FAILED_RESPONSE =
+      "Something went wrong. Please send me an email manually - ${StringConst.DEV_EMAIL}";
 
   // About Page
   static const String ABOUT_DEV_CATCH_LINE =
       "I am a passionate front-end developer and ui/ux designer with a keen eye for details.";
-  static const String ABOUT_DEV_CATCH_LINE_1 = "I specialize in building high ";
-  static const String ABOUT_DEV_CATCH_LINE_2 =
-      "quality mobile & web applications.";
-  // static const String ABOUT_DEV_CATCH_LINE_3 = "& web applications";
-  static const String ABOUT_DEV_CATCH_LINE_4 = "I also have a strong";
-  static const String ABOUT_DEV_CATCH_LINE_5 = "passion for opensource work.";
+  static const String ABOUT_DEV_CATCH_LINE_1 = "I'm a Full Stack Engineer";
+  static const String ABOUT_DEV_CATCH_LINE_2 = "who loves to build new things.";
+  // static const String ABOUT_DEV_CATCH_LINE_3 =
+  //     "and deploying exceptional websites, ";
+  // static const String ABOUT_DEV_CATCH_LINE_5 = "applications, and mobile apps.";
   static const String ABOUT_DEV_STORY = "Story";
-  static const String ABOUT_DEV_STORY_TITLE =
-      "A little bit about myself.";
+  static const String ABOUT_DEV_STORY_TITLE = "Who I am.";
   static const String ABOUT_DEV_STORY_CONTENT_1 =
-      "I am full stack software engineer with great passion for building high quality applications. I have an extensive experience building frontend (mobile & web) and backend applications. I occasionally work as a tech consultant and I am enthusiastic about Devops & Cloud computing technologies.";
-  static const String ABOUT_DEV_STORY_CONTENT_2 =
-      "I have a Masters in IT from Carnegie Mellon University where I majored in Software Engineering. I have strong technical skills as well as excellent interpersonal skills, which has enabled me to work & interact with clients all over the world.";
-  static const String ABOUT_DEV_STORY_CONTENT_3 =
-      "I am very great at finding solutions to problems and I have a very keen eye for details. I enjoy building fun/useful projects in my free time and open sourcing them. I am an avid reader, lover of all forms art & music, a big fan of poetry & I love travelling.";
+      "I am experienced full stack software engineer specializing in web and mobile apps. I have extensive experience building frontend (mobile & web) and backend applications. I am also enthusiastic about Devops & Cloud computing technologies.";
+  // static const String ABOUT_DEV_STORY_CONTENT_2 =
+  //     "I have a Masters in IT from Carnegie Mellon University where I majored in Software Engineering. I have strong technical skills as well as excellent interpersonal skills, which has enabled me to work & interact with clients all over the world.";
+  // static const String ABOUT_DEV_STORY_CONTENT_3 =
+  //     "I am very great at finding solutions to problems and I have a very keen eye for details. I enjoy building fun/useful projects in my free time and open sourcing them. I am an avid reader, lover of all forms art & music, a big fan of poetry & I love travelling.";
   static const String ABOUT_DEV_TECHNOLOGY = "Technology";
   static const String MOBILE_TECH = "Mobile Technologies";
   static const String OTHER_TECH = "Web / Cloud / Design Technologies";
   static const String ABOUT_DEV_TECHNOLOGY_TITLE = "What I use.";
   static const String ABOUT_DEV_TECHNOLOGY_CONTENT =
-      "I use a number of tools to aid my creative process when bringing things to life. Listed below are the tools and technologies that I have used over the years.";
+      "Listed below are the tools and technologies that I have in professional and freelance work.";
   static const String ABOUT_DEV_CONTACT = "Contact";
   static const String ABOUT_DEV_CONTACT_SOCIAL = "Social.";
   static const String ABOUT_DEV_CONTACT_EMAIL = "Email.";
@@ -110,7 +113,7 @@ class StringConst {
   static const String VIEW = "View";
   static const String COMING_SOON = "COMING SOON !!";
   static const String BUILT_WITH_FLUTTER = "Built using ";
-  static const String DEV_EMAIL = "davidcobbina47@gmail.com";
+  static const String DEV_EMAIL = "matt.nieland@gmail.com";
   static const String EMAIL_URL = "mailto:<$DEV_EMAIL>?subject=&body=";
 
   static const String KEY_SKILLS = "KEY SKILLS";
@@ -123,13 +126,12 @@ class StringConst {
   static const String PROJECT_NAME = "Project Name";
 
   static const String INTRO = "Hi, my name is";
-  static const String DEV_NAME = "David Cobbina";
+  static const String DEV_NAME = "Matt Nieland";
   static const String PUNCH_LINE = "I build things with flutter";
   static const String SPECIALITY = "FLUTTER DEV";
   static const String DESIGNED_IN = "Made in Ghana with ";
   static const String BUILT_BY = "Built by David Cobbina ";
 
-  
   //Form Hint Texts
   static const String NAME_HINT_TEXT = "Name";
   static const String PHONE_HINT_TEXT = "Phone (Optional)";
@@ -167,25 +169,18 @@ class StringConst {
 
   //Socials
 
-  static const String GITHUB_URL = "https://github.com/david-legend";
-  static const String LINKED_IN_URL =
-      "https://www.linkedin.com/in/david-cobbina-7b0226119";
-  static const String TWITTER_URL = "https://twitter.com/DavidLegend47";
-  static const String INSTAGRAM_URL =
-      "https://www.instagram.com/david_legend_47";
-  static const String TELEGRAM_URL = "https://t.me/DavidLegend";
+  static const String GITHUB_URL = "https://github.com/mattnieland";
+  static const String LINKED_IN_URL = "https://www.linkedin.com/in/mattnieland";
 
   //Contacts
   static const String CONNECT = "Connect with me";
   static const String EMAIL = "Email";
   static const String LINKED_IN = "LinkedIn";
-  static const String TWITTER = "Twitter";
-  static const String INSTAGRAM = "Instagram";
-  static const String TELEGRAM = "Telegram";
   static const String GITHUB = "Github";
 
   //Certificate Urls
-  static const String CMU_CERT_URL = "https://www.cmu.edu/hub/registrar/graduation/diplomas/electronic/validation/index.html";
+  static const String CMU_CERT_URL =
+      "https://www.cmu.edu/hub/registrar/graduation/diplomas/electronic/validation/index.html";
   static const String ASSOCIATE_ANDROID_DEV_URL =
       "https://www.credential.net/b296da88-d6be-4bb5-9756-b13efea3a421";
   static const String DATA_SCIENCE_CERT_URL =
@@ -194,8 +189,6 @@ class StringConst {
       "https://confirm.udacity.com/PJU23DCP";
   static const String ANDROID_BASICS_CERT_URL =
       "https://graduation.udacity.com/confirm/9VTDRN5K";
-
-
 
   //AwardedBy
   static const String GOOGLE = "Google";
@@ -237,7 +230,6 @@ class StringConst {
   static const String LOCATION_3 = "East Legon - Accra";
   static const String DURATION_3 = "August 2019 - April 2020";
 
-
   static const String COMPANY_4 = "Brij Money";
   static const String COMPANY_4_URL = "https://www.brij.money/";
   static const String POSITION_4 = "Software Engineer Intern";
@@ -249,7 +241,6 @@ class StringConst {
       "Interfaced with user experience designers and other developers to ensure thoughtful and coherent user experiences across brij’s iOS and Android mobile apps.";
   static const String LOCATION_4 = "Accra - Ghana";
   static const String DURATION_4 = "June 2021 - Aug 2021";
-
 
   static const String COMPANY_5 = "Consultant";
   static const String COMPANY_5_URL = SITE_URL;
@@ -351,8 +342,7 @@ class StringConst {
   static const String DISNEY_PLUS = "Disney Plus";
   static const String DISNEY_PLUS_PLATFORM = "Android.";
   static const String DISNEY_PLUS_CATEGORY = "UI Kit.";
-  static const String DISNEY_PLUS_SUBTITLE =
-      "Disney+, But Better";
+  static const String DISNEY_PLUS_SUBTITLE = "Disney+, But Better";
   static const String DISNEY_PLUS_DETAIL =
       "Disney Plus is an amazing UI Kit  designed by Andre Carioca. He describes the UI Kit as his attempt of making the current disney plus app better. For me, this project is my attempt at learning and playing with Jetpack Compose. It contains everything that I am learning about the current state of native android development with Kotlin & Jetpack Compose";
   static const String DISNEY_PLUS_PLAYSTORE_URL = "";
@@ -429,21 +419,25 @@ class StringConst {
   static const String FINOPP_DETAIL_WEB_URL = "";
 
   static const String UDAGRAM_IMAGE_FILTERING = "Udagram Image Filtering App";
-  static const String UDAGRAM_IMAGE_FILTERING_TECH = "Kubernetes / Docker / Ionic / Node.";
+  static const String UDAGRAM_IMAGE_FILTERING_TECH =
+      "Kubernetes / Docker / Ionic / Node.";
   static const String UDAGRAM_IMAGE_FILTERING_SUBTITLE =
       "Udagram is a simple cloud application developed alongside the Udacity Cloud Engineering Nanodegree. It allows users to register and log into a web client, post photos to the feed, and process photos using an image filtering microservice.";
   static const String UDAGRAM_IMAGE_FILTERING_DETAIL =
       "Udagram is a simple cloud application developed alongside the Udacity Cloud Engineering Nanodegree. It allows users to register and log into a web client, post photos to the feed, and process photos using an image filtering microservice.";
-  static const String UDAGRAM_IMAGE_FILTERING_GITHUB_URL = "https://github.com/david-legend/udagram";
+  static const String UDAGRAM_IMAGE_FILTERING_GITHUB_URL =
+      "https://github.com/david-legend/udagram";
   static const String UDAGRAM_IMAGE_FILTERING_DETAIL_WEB_URL = "";
 
   static const String SERVERLESS_TODO = "Serverless Todo App";
-  static const String SERVERLESS_TODO_TECH = "Serverless / AWS Lambda / API GateWay / Node / React";
+  static const String SERVERLESS_TODO_TECH =
+      "Serverless / AWS Lambda / API GateWay / Node / React";
   static const String SERVERLESS_TODO_SUBTITLE =
       "Simple TODO application using AWS Lambda and Serverless framework";
   static const String SERVERLESS_TODO_DETAIL =
       "Simple TODO application using AWS Lambda and Serverless framework";
-  static const String SERVERLESS_TODO_GITHUB_URL = "https://github.com/david-legend/serverless-todo-app";
+  static const String SERVERLESS_TODO_GITHUB_URL =
+      "https://github.com/david-legend/serverless-todo-app";
   static const String SERVERLESS_TODO_DETAIL_WEB_URL = "";
 
   static const String PYTHON_ALGORITHMS = "Python Algorithms";
@@ -452,7 +446,8 @@ class StringConst {
       "Data structures and interview questions implemented in JavaScript with explanations and links to further readings.";
   static const String PYTHON_ALGORITHMS_DETAIL =
       "Data structures and interview questions implemented in JavaScript with explanations and links to further readings.";
-  static const String PYTHON_ALGORITHMS_GITHUB_URL = "https://github.com/david-legend/python-algorithms";
+  static const String PYTHON_ALGORITHMS_GITHUB_URL =
+      "https://github.com/david-legend/python-algorithms";
   static const String PYTHON_ALGORITHMS_DETAIL_WEB_URL = "";
 
   static const String AMOR_APP = "Amor";

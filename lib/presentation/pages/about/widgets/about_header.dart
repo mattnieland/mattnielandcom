@@ -75,8 +75,10 @@ class AboutHeader extends StatelessWidget {
                     minWidth: imageWidthLg,
                     maxHeight: assignHeight(context, 0.55),
                   ),
-                  child: Image.asset(ImagePath.DEV,
-                    fit: BoxFit.cover,),
+                  child: Image.asset(
+                    ImagePath.DEV,
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
             ],
@@ -124,23 +126,22 @@ class AboutDescription extends StatelessWidget {
           heightFactor: 2,
           textStyle: style,
         ),
-
-        SpaceH8(),
-        AnimatedTextSlideBoxTransition(
-          controller: controller,
-          text: StringConst.ABOUT_DEV_CATCH_LINE_4,
-          width: width,
-          maxLines: 10,
-          textStyle: style,
-        ),
-        SpaceH8(),
-        AnimatedTextSlideBoxTransition(
-          controller: controller,
-          text: StringConst.ABOUT_DEV_CATCH_LINE_5,
-          width: width,
-          maxLines: 10,
-          textStyle: style,
-        ),
+        // SpaceH8(),
+        // AnimatedTextSlideBoxTransition(
+        //   controller: controller,
+        //   text: StringConst.ABOUT_DEV_CATCH_LINE_3,
+        //   width: width,
+        //   maxLines: 10,
+        //   textStyle: style,
+        // ),
+        // SpaceH8(),
+        // AnimatedTextSlideBoxTransition(
+        //   controller: controller,
+        //   text: StringConst.ABOUT_DEV_CATCH_LINE_5,
+        //   width: width,
+        //   maxLines: 10,
+        //   textStyle: style,
+        // ),
       ],
     );
   }

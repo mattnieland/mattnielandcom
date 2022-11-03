@@ -22,7 +22,6 @@ class NavItem extends StatefulWidget {
     required this.route,
     required this.index,
     required this.controller,
-     
     this.titleColor = AppColors.grey600,
     this.selectedColor = AppColors.black,
     this.isSelected = false,
@@ -99,6 +98,7 @@ class _NavItemState extends State<NavItem> {
                   alignment: Alignment.center,
                   child: AnimatedLineThroughText(
                     text: widget.title.toLowerCase(),
+                    lineThickness: 0.0,
                     isUnderlinedOnHover: false,
                     textStyle: widget.titleStyle ??
                         widget.titleStyle ??
@@ -109,7 +109,6 @@ class _NavItemState extends State<NavItem> {
                         ),
                     hoverColor: AppColors.accentColor,
                     coverColor: AppColors.black,
-                    lineThickness: 4,
                     onHoverTextStyle: textTheme.headline6?.copyWith(
                       fontSize: selectedTextSize,
                       color: AppColors.accentColor,
@@ -140,6 +139,7 @@ class _NavItemState extends State<NavItem> {
                   child: Align(
                     alignment: Alignment.center,
                     child: AnimatedLineThroughText(
+                      lineThickness: 0.0,
                       text: widget.title.toLowerCase(),
                       isUnderlinedOnHover: false,
                       textStyle: widget.titleStyle ??
@@ -149,7 +149,6 @@ class _NavItemState extends State<NavItem> {
                           ),
                       hoverColor: AppColors.accentColor,
                       coverColor: AppColors.black,
-                      lineThickness: 4,
                       onHoverTextStyle: textTheme.bodyText1?.copyWith(
                         fontSize: unselectedTextSize,
                         color: AppColors.accentColor,
@@ -181,13 +180,14 @@ class _NavItemState extends State<NavItem> {
       fontSize: textSize,
       color: widget.titleColor,
     );
-    
+
     return widget.isSelected
         ? AnimatedLineThroughText(
             text: widget.title,
             isUnderlinedOnHover: false,
             hasOffsetAnimation: true,
             hasSlideBoxAnimation: true,
+            lineThickness: 0.0,
             controller: widget.controller,
             textStyle: widget.titleStyle ?? defaultSelectedItemStyle,
           )
@@ -195,6 +195,7 @@ class _NavItemState extends State<NavItem> {
             text: widget.title,
             isUnderlinedOnHover: false,
             hasOffsetAnimation: true,
+            lineThickness: 0.0,
             textStyle: widget.titleStyle ?? defaultUnselectedItemStyle,
             onHoverTextStyle: defaultUnselectedItemStyle?.copyWith(
               color: widget.selectedColor,
